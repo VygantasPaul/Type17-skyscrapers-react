@@ -31,9 +31,6 @@ const gallery = () => {
     <>
       <Header />
       <main className={`${homecss.main} ${inter.className}`}>
-        <div className={homecss.heading}>
-          <h2>Gallery</h2>
-        </div>
         {galleries ? <Gallery galleries={galleries} /> : <div>Loading..</div>}
       </main>
       <Footer />

@@ -21,7 +21,7 @@ export default function Home({ }) {
       const filteredSkycapers = response.data.slice(0, 3).sort((a, b) => (a.building_height > b.building_height ? -1 : 1));
       setSkycapers(filteredSkycapers);
 
-      const limitedGalleries = response.data.slice(0, 2);
+      const limitedGalleries = response.data.slice(0, 3);
       setGallery(limitedGalleries);
     } catch (err) {
       console.log(err);
@@ -49,16 +49,16 @@ export default function Home({ }) {
           <Skycapers skycapers={skycapers} />
           <Link href="/skycapers" className={styles.btn}>see more</Link>
         </div>
-        <div className={styles.topThreeGallery}>
+        <div className={styles.top_three_gallery_home}>
           <div className={styles.heading}>
-            <h2> Top 2</h2>
+            <h2>Top 3</h2>
           </div>
           <Gallery galleries={galleries} />
           <div>
             <Link href="/gallery" className={styles.btn}>see more</Link>
           </div>
         </div>
-        <div className={styles.topThreeGallery}>
+        <div className={styles.give_us_call}>
           <div className={styles.heading}>
             <h2>Give us call</h2>
           </div>

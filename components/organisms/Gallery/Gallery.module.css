@@ -8,9 +8,11 @@
   object-fit: cover;
   position: relative;
 }
+.galleryWrap {
+}
 .photoItem img:hover {
-  transform: scale(1.2);
-  z-index: 9;
+  opacity: 0.5;
+  cursor: pointer;
 }
 .galleryItem {
   width: 100%;
@@ -21,8 +23,44 @@
   grid-template-columns: 1fr;
   gap: 1rem;
 }
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  overflow: auto;
+}
+
+.modal_image {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.modal_image svg {
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  color: #fff;
+  font-size: 1.5rem;
+  height: 30px;
+  width: 30px;
+  margin: auto;
+  cursor: pointer;
+}
+
 @media (min-width: 992px) {
   .galleryPage {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
