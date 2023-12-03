@@ -1,0 +1,26 @@
+.burgerButton {
+  color: #000;
+  border-radius: 0;
+  box-shadow: none;
+  border: 0;
+  cursor: pointer;
+  position: fixed;
+  right: 30px;
+}
+
+.burgerButton svg {
+  background-color: #fff;
+  height: 30px;
+  width: 40px;
+  padding: 0.5rem 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.burgerButton svg:hover {
+  background-color: #000;
+  color: #fff;
+}
+@media (min-width: 992px) {
+  .burgerButton {
+    right: 100px;
+  }
+}

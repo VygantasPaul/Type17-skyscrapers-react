@@ -1,0 +1,18 @@
+.content {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.photoBig,
+.content {
+  width: 50%;
+}
+.photoBig img {
+  width: 100%;
+}
+.insidePage {
+  display: flex;
+}
+.inside {
+  padding-bottom: 2rem;
+}

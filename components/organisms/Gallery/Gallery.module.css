@@ -1,0 +1,28 @@
+.photoItem {
+  width: 100%;
+}
+.photoItem img {
+  width: 100%;
+  max-height: 500px;
+  transition: transform 0.2s;
+  object-fit: cover;
+  position: relative;
+}
+.photoItem img:hover {
+  transform: scale(1.2);
+  z-index: 9;
+}
+.galleryItem {
+  width: 100%;
+}
+
+.galleryPage {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 992px) {
+  .galleryPage {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

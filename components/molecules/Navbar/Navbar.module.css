@@ -1,0 +1,26 @@
+.navbar {
+  position: fixed;
+  top: 156px;
+  background-color: #fff;
+  right: 100px;
+  padding: 1.5rem 0rem;
+  z-index: 9;
+}
+.navbar ul {
+  list-style: none;
+}
+.navbar ul li {
+  display: block;
+  padding: 0rem;
+}
+
+.navbar ul li a {
+  color: #000;
+  padding: 1rem 5.9rem;
+  display: block;
+}
+
+.navbar ul li a:hover {
+  background-color: #000;
+  color: #fff;
+}

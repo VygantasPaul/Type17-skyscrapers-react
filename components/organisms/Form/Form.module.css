@@ -1,0 +1,13 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-bottom: 3rem;
+}
+
+.error {
+  color: red;
+  padding: 1rem;
+  border: 1px solid red;
+}

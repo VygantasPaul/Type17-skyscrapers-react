@@ -1,0 +1,7 @@
+/* components/atoms/Error/Error.module.css */
+.error {
+  color: red;
+  margin-top: 5px;
+  border: 1px solid red;
+  padding: 1rem;
+}

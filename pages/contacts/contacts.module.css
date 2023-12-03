@@ -1,0 +1,26 @@
+.contactInner {
+  display: flex;
+  flex-direction: column;
+}
+.subheading {
+  padding: 2rem 0;
+}
+.contactInner input {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 0;
+  padding: 0.5rem;
+}
+.contactInner textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 0;
+  padding: 0.5rem;
+}
+.error {
+  color: red;
+  padding: 1rem;
+  border: 1px solid red;
+}

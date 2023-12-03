@@ -1,0 +1,23 @@
+.skycapersWrap .heading {
+  background-color: #fff;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.skycapers {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  gap: 1rem;
+}
+.skycaper a {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  display: block;
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+  .skycapers {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
