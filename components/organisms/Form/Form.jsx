@@ -6,7 +6,7 @@ import Button from "../../atoms/Button/Button";
 import Input from "@/components/atoms/AddPost/Input/Input";
 import Textarea from "@/components/atoms/AddPost/Textarea/Textarea";
 import Error from "@/components/atoms/Error/Error";
-
+import { format } from "date-fns";
 const Form = ({ getskycapersData }) => {
   const [skycaperTitle, setSkycaperTitle] = useState("");
   const [skycaperLocation, setSkycaperLocation] = useState("");
@@ -62,6 +62,7 @@ const Form = ({ getskycapersData }) => {
     const isValid = validateInputs();
     if (isValid) {
       const newSkycaper = {
+        createdAt: format(new Date(), "yyyy-MM-dd"),
         title: skycaperTitle,
         location: skycaperLocation,
         years_build: skycaperYearbuild,

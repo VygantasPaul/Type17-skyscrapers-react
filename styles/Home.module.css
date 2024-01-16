@@ -2,7 +2,9 @@
   align-items: center;
   padding: 6rem;
 }
-
+.galleryPage {
+  padding: 6rem;
+}
 .photo img {
   width: 100%;
   max-height: 283px;
@@ -19,6 +21,7 @@
   display: inline-block;
   background-color: #fff;
 }
+
 .btn {
   background-color: crimson;
   color: #fff;
@@ -32,10 +35,6 @@
   position: relative;
 }
 
-.top_three_gallery_home .galleryWrap .galleryPage {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
 @media (min-width: 1100px) {
 }
 /* Enable hover only on non-touch devices */

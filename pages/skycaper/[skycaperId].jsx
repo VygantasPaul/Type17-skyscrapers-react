@@ -55,7 +55,7 @@ const SkycaperId = () => {
                 <small>{skycaper.createdAt}</small>
                 <h2>{skycaper.title}</h2>
                 <h3>Location: {skycaper.location}</h3>
-                <h4>Height: {skycaper.building_height}</h4>
+                <h4>Height: {skycaper.building_height}m</h4>
                 <h4>Floors: {skycaper.numbers_floors}</h4>
                 <h4>Year build: {skycaper.years_build}</h4>
 

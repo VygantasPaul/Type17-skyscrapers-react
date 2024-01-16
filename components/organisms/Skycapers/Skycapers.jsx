@@ -10,11 +10,13 @@ const Skycapers = ({ skycapers }) => {
             <h2>Skycapers</h2>
           </div>
           <div className={styles.skycapers}>
-            {skycapers.map((skycaper) => (
-              <div className={styles.skycaper} key={skycaper.id}>
-                <Skyscaper skycaper={skycaper} />
-              </div>
-            ))}
+            {skycapers
+              .sort((a, b) => (a.building_height > b.building_height ? -1 : 1))
+              .map((skycaper) => (
+                <div className={styles.skycaper} key={skycaper.id}>
+                  <Skyscaper skycaper={skycaper} />
+                </div>
+              ))}
           </div>
         </div>
       ) : (

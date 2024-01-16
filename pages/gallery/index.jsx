@@ -30,7 +30,7 @@ const gallery = () => {
   return (
     <>
       <Header />
-      <main className={`${homecss.main} ${inter.className}`}>
+      <main className={`${homecss.galleryPage} ${inter.className}`}>
         {galleries ? <Gallery galleries={galleries} /> : <div>Loading..</div>}
       </main>
       <Footer />

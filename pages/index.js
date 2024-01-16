@@ -18,8 +18,9 @@ export default function Home({ }) {
       const response = await axios.get(
         "https://656599ffeb8bb4b70ef1ebb4.mockapi.io/skyscrapers",
       );
-      const filteredSkycapers = response.data.slice(0, 3).sort((a, b) => (a.building_height > b.building_height ? -1 : 1));
-      setSkycapers(filteredSkycapers);
+      const filteredSkycapers = response.data.sort((a, b) => (a.building_height > b.building_height ? -1 : 1));
+      const limitSkycapers = filteredSkycapers.slice(0, 3)
+      setSkycapers(limitSkycapers);
 
       const limitedGalleries = response.data.slice(0, 3);
       setGallery(limitedGalleries);
