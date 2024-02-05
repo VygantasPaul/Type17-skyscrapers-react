@@ -3,7 +3,7 @@
   top: 156px;
   background-color: #fff;
   right: 100px;
-  padding: 1.5rem 0rem;
+  padding: 0rem !important;
   z-index: 9;
 }
 .navbar ul {

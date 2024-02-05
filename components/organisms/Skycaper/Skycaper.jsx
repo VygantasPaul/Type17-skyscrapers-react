@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Skycaper.module.css";
 import Link from "next/link";
-function Skyscaper({ skycaper }) {
+const Skyscaper = ({ skycaper }) => {
   const imageUrl = skycaper.photo || "https://placeholder.com/150";
   return (
     <Link href={`/skycaper/${skycaper.id}`} className={styles.skycaperPage}>
@@ -10,6 +10,6 @@ function Skyscaper({ skycaper }) {
       <p>{skycaper.location}</p>
     </Link>
   );
-}
+};
 
 export default Skyscaper;
